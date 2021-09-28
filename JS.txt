@@ -1,0 +1,31 @@
+let unsortArry=[5,8,0,1,9,11,15,16];
+
+let swapped;
+
+function bubbleSort(arr){
+	swapped =false;
+	let end =arr.length - 1;
+	
+console.log("Original arr list: ",unsortArry)
+
+for(let i = 0 , j = 1; i < end; i++, j++)
+{
+	
+        if(arr[i] > arr[j])
+        {
+	        swapped =true;
+           [arr[i], arr[j]] = [arr[j], arr[i]]
+        }
+    }
+
+end--;
+}
+
+do{
+	bubbleSort(numbers);
+}
+while(swapped);
+
+console.log(unsortArry);
+
+
